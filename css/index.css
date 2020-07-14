@@ -217,7 +217,7 @@ marquee{
 @media only screen and (max-width: 600px) {
 
 
-	header{
+header{
 	font-size: 0.85em;
 	width: 100%;
 	display: flex;
@@ -239,6 +239,12 @@ marquee{
 
 
 
+/****************FIN HEADER****************/
+
+
+
+
+
 #landing{
 	border: 0px solid black;
 	width: 100%;
@@ -256,7 +262,7 @@ marquee{
 
 #landingtext{
 	font-family: Agrandir;
-	font-size: 3em;
+	font-size: 2.6em;
 	font-variation-settings: "wght" 469, "wdth" 170;
 }
 

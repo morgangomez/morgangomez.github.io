@@ -279,6 +279,147 @@ marquee{
 @media only screen and (max-width: 600px) {
   
 
+
+header{
+	font-size: 0.85em;
+	width: 100%;
+	display: flex;
+	border: 0px solid red;
+	justify-content: space-between;
+	font-family: VremenaGroteskBook, sans-serif;
+	border: 0px solid black;
+}
+
+
+
+#navsections{
+		width: 66%;
+		display: flex;
+		justify-content: space-between;
+		border: 0px solid blue;
+}
+
+/**********************FIN HEADER**********************/
+
+
+
+
+
+
+#works{
+	border: 0px solid black;
+	width: 100%;
+	margin-top: 3%;
+	/*padding-top: 10%;*/
+	overflow:scroll;
+	height: 90vh;
+
+}
+
+
+#backcircleyellow{
+	width: 30%;
+	position: fixed;
+	border: 0px solid yellow;
+	z-index: -1;
+	bottom: -20%;
+	left: -10%;
+}
+
+#backcirclered{
+	width: 25%;
+	position: fixed;
+	border: 0px solid yellow;
+	z-index: -1;
+	top: -20%;
+	right: -10%;
+}
+
+
+
+
+
+
+
+
+#articleprojet{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border: 0px solid black;
+	width: 93%;
+	margin: auto;
+	align-items: center;
+	margin-top: 14%;
+}
+
+#projtext{
+	margin-top: 4%;
+	width: 95%;
+}
+
+#projtitle, #projtype, #projdesc{
+	border: 0px solid black;
+}
+
+#projpic{
+	width: 100%;
+	border-radius: 25px;
+	filter: drop-shadow(3px 3px 7px #a6a6a6)
+}
+
+
+
+#projtitle{
+	font-family: Agrandir;
+	font-variation-settings: "wght" 469, "wdth" 150;
+	font-size: 1.7em;
+}
+
+#projtype{
+	font-size: 0.9em;
+	font-family: VremenaGroteskBook, sans-serif;
+	margin-top: 0%;
+	color: #6A6A6A;
+}
+
+#projdesc{
+	border: 0px solid black;
+
+	margin-top: 5%;
+	font-family: VremenaGroteskBook, sans-serif;
+	font-size: 0.9em;
+
+	line-height: 1.3;
+}
+
+
+
+
+
+
+
+
+/**********************FIN CONTENEUR**********************/
+
+
+
+footer{
+	font-size: 0.85em;
+	border: 0px solid red;
+	position: fixed;
+	bottom: 2%;
+	width: 100%;
+	font-family: VremenaGroteskBook, sans-serif;
+}
+
+marquee{
+	border: 0px solid blue;
+	mix-blend-mode: difference;
+}
+
+
+
 }
 
 
