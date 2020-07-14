@@ -361,7 +361,7 @@ header{
 	flex: 3;
 	margin-right: -2.6%;
 
-	border: 1px solid red;
+	border: 0px solid red;
 
 	overflow: visible;
 	top: 0;
@@ -377,7 +377,7 @@ img{
 iframe{
 
 	height: auto;
-	border: 1px solid blue;
+	border: 0px solid blue;
 
 }
 
