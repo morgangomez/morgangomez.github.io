@@ -51,12 +51,6 @@ body{
 	text-decoration: underline;
 }
 
-#selectedlanding{
-	font-family: Agrandir;
-	font-variation-settings: "wght" 469, "wdth" 170;
-	text-decoration: underline;
-}
-
 a{
 	text-decoration: none;
 	color: black;
@@ -102,7 +96,8 @@ header{
 }
 
 #landingtextbox{
-	border: 0px solid blue;
+	font-family: Agrandir;
+	font-variation-settings: "wght" 469, "wdth" 170;
 
 }
 
@@ -111,6 +106,14 @@ header{
 	font-size: 2.8em;
 	font-variation-settings: "wght" 469, "wdth" 170;
 }
+
+#selectedlanding{
+	font-family: Agrandir;
+	font-variation-settings: "wght" 469, "wdth" 170;
+	text-decoration: underline;
+}
+
+
 
 #backcircle{
 	width: 25%;
