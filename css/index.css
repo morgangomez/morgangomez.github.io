@@ -36,7 +36,7 @@ src: url("fonts/VremenaGrotesk.otf") format("opentype");
 }
 
 body{
-	font-family: sans-serif;
+	font-family: VremenaGroteskBook, sans-serif;
 	background-color: #F2F2F2
 }
 
