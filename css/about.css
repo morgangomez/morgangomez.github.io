@@ -271,12 +271,22 @@ p{
 	flex-direction: column;
 	justify-content: space-between;
 	margin-bottom: 10%;
+	width: 95%;
+	margin: auto;
 }
 
-#block1, #block2, #block3{
+#block1, #block2{
 	border: 0px solid black;
 	width: 100%;
 	margin-top: 10%;
+
+}
+
+ #block3{
+	border: 0px solid black;
+	width: 100%;
+	margin-top: 10%;
+	margin-bottom: 15%;
 
 }
 
