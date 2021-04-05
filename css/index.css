@@ -89,7 +89,7 @@ header{
 #landing{
 	border: 0px solid black;
 	width: 100%;
-	height: 90vh;
+	height: 93vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -106,7 +106,7 @@ header{
 	font-size: 2.3em;
 	font-variation-settings: "wght" 469, "wdth" 170;
 	border: 0px solid black;
-	width: 65%;
+	width: 60%;
 }
 
 #landingtext2{
