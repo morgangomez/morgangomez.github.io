@@ -36,7 +36,7 @@ src: url("fonts/VremenaGrotesk.otf") format("opentype");
 }
 
 body{
-	font-family: VremenaGroteskBook, sans-serif;
+	font-family: sans-serif;
 	background-color: #F2F2F2
 }
 
@@ -103,8 +103,19 @@ header{
 
 #landingtext{
 	font-family: Agrandir;
-	font-size: 2.8em;
+	font-size: 2.3em;
 	font-variation-settings: "wght" 469, "wdth" 170;
+	border: 0px solid black;
+	width: 65%;
+}
+
+#landingtext2{
+	font-family: Agrandir;
+	font-size: 1.5em;
+	font-variation-settings: "wght" 469, "wdth" 170;
+	border: 0px solid black;
+	width: 55%;
+	margin-top: 3%;
 }
 
 #selectedlanding{
@@ -262,7 +273,7 @@ header{
 
 #landingtext{
 	font-family: Agrandir;
-	font-size: 2.6em;
+	font-size: 2em;
 	font-variation-settings: "wght" 469, "wdth" 170;
 }
 
@@ -275,11 +286,11 @@ header{
   
 
 #backcircle{
-	width: 50%;
+	width: 100%;
 	position: absolute;
 	border: 0px solid yellow;
-	top: 30%;
-	right: 10%;
+	top: 25%;
+	margin-right: -80%;
 	z-index: -1;
 }
 
