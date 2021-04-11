@@ -123,6 +123,20 @@ p{
 	margin-top: 12%;
 }
 
+#scrolltoseemore{
+	margin-top: -7%;
+	margin-bottom: 7%;
+	font-size: 0.7em;
+}
+
+#txtarticle2{
+
+	height: 275px;
+	overflow: scroll;
+	border: 0px solid black;
+
+}
+
 img{
 	width: 100%;
 }
