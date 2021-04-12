@@ -141,6 +141,23 @@ img{
 	width: 100%;
 }
 
+#photoprofil{
+	margin-top: 12%;
+}
+
+#txtarticle3{
+
+	display: flex;
+	justify-content: space-between;
+	overflow: scroll;
+	border: 0px solid black;
+
+}
+
+#skills2{
+	margin-right: 10%;
+}
+
 
 
 
