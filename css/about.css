@@ -281,7 +281,13 @@ header{
 
 
 
+#txtarticle2{
 
+	height: 100%;
+	overflow: scroll;
+	border: 0px solid black;
+
+}
 
 
 
