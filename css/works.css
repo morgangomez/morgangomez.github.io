@@ -25,27 +25,42 @@ time, mark, audio, video {
 }
 
 @font-face {
-font-family: "Agrandir";
-src: url("fonts/Agrandir.ttf") format("truetype");
+font-family: "SuisseBook";
+src: url("fonts/SuisseIntl-Book.otf") format("opentype");
 
-font-family: "VremenaGroteskBook"
-src: url("fonts/VremenaGroteskBook.otf") format("opentype");
-
-font-family: "VremenaGrotesk"
-src: url("fonts/VremenaGrotesk.otf") format("opentype");
+font-family: "SuisseRegular";
+src: url("fonts/SuisseIntl-Regular.otf") format("opentype");
 }
 
 body{
 	font-family: sans-serif;
-	background-color: #F2F2F2
+	color: white;
+	background-color: black;
+	font-size: 0.80em;
 }
 
+
+
+
+
+
+
+
+
+
+
 #conteneur{
-	border: 0px solid black;
+	border: 0px solid yellow;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	width: 95%;
 	margin: auto;
-	margin-top: 1.5%;
+	margin-top: 1%;
+	height: 95vh;
 }
+
+
 
 #selected{
 	text-decoration: underline;
@@ -53,161 +68,151 @@ body{
 
 a{
 	text-decoration: none;
-	color: black;
+	color: white;
+	font-family: sans-serif;
 }
 
 a:hover{
 	text-decoration: underline;
 }
 
-#lienprojet:hover{
-	text-decoration: none;
-}
+
+
+
+
 
 header{
-	font-size: 0.85em;
 	width: 100%;
 	display: flex;
+	border: 0px solid cyan;
+	font-family: SuisseBook, sans-serif;
+}
+
+#navgauche{
+	border: 0px solid pink;
+	width: 65%;
+}
+
+#navdroite{
+	width: 35%;
+	border: 0px solid blue;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+
+
+#contenu{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
 	border: 0px solid red;
-	justify-content: space-between;
-	font-family: VremenaGroteskBook, sans-serif;
 }
 
-	#navsections{
-		width: 40%;
-		display: flex;
-		justify-content: space-between;
-	}
-
-	#logotitre{
-		border: 0px solid blue;
-	}
-
-	#navsections{
-		border: 0px solid blue;
-	}
-
-
-/*************************FIN HEADER*************************/
 
 
 
 
 
+#boite1{
+	width: 55%;
+	border: 0px solid hotpink;
+	height: 100%;
+}
 
-
-
-#works{
-	border: 0px solid black;
+.preview{
 	width: 100%;
-	margin-top: 1%;
-	/*padding-top: 10%;*/
-	overflow:scroll;
-	height: 87vh;
+	height: 100%;
+	vertical-align: middle;
+	border: 0px solid blue;
 
 }
 
 
-#backcircleyellow{
-	width: 30%;
-	position: fixed;
-	border: 0px solid yellow;
+
+.thumb{
+	width: 100%;
+	display: none; 
 	z-index: -1;
-	bottom: -20%;
-	left: -10%;
-}
-
-#backcirclered{
-	width: 25%;
-	position: fixed;
-	border: 0px solid yellow;
-	z-index: -1;
-	top: -20%;
-	right: -10%;
 }
 
 
 
 
 
+#boite2{
+	width: 35%;
+	height: 100%;
+	border: 0px solid green;
+}
 
 
-#articleprojet{
-	display: flex;
+
+#projetsliste{
+	border: 0px solid red;
+	width: 100%;
+	height: 100%;
+	display: flex; 
+	align-items: center; 
+	justify-content: center;
 	justify-content: space-between;
-	border: 0px solid black;
-	width: 93%;
-	margin: auto;
-	align-items: center;
-	margin-top: 14%;
 }
 
-#projtext{
+.list{
+	border: 0px solid white;
 	width: 50%;
-}
-
-#projtitle, #projtype, #projdesc{
-	border: 0px solid black;
-}
-
-#projpic{
-	width: 45%;
-	border-radius: 25px;
-	filter: drop-shadow(6px 6px 20px #a6a6a6)
+	line-height: 1.5;
 }
 
 
+#typeprojets{
+	line-height: 1.5;
+	border: 0px solid blue;
 
-#projtitle{
-	font-family: Agrandir;
-	font-variation-settings: "wght" 469, "wdth" 150;
-	font-size: 1.7em;
 }
 
-#projtype{
-	font-size: 0.9em;
-	font-family: VremenaGroteskBook, sans-serif;
-	margin-top: 0%;
-	color: #6A6A6A;
+.type{
+
+	color: #000000;
+
 }
 
-#projdesc{
-	border: 0px solid black;
 
-	margin-top: 5%;
-	font-family: VremenaGroteskBook, sans-serif;
-	font-size: 0.9em;
-
-	line-height: 1.3;
+.previewname{
+	border: 0px solid cyan;
+	padding-top: 2%;
 }
 
 
 
-/**********************FIN CONTENEUR**********************/
+
+
+
+
+
 
 
 
 footer{
-	font-size: 0.85em;
-	border: 0px solid red;
-	position: fixed;
-	bottom: 2%;
+	border: 0px solid orange;
 	width: 100%;
-	font-family: VremenaGroteskBook, sans-serif;
+	font-family: SuisseBook, sans-serif;
+	color: white;
+	display: flex;
 }
 
-marquee{
-	border: 0px solid blue;
-	mix-blend-mode: difference;
+#footer1{
+	border: 0px solid red;
+	width: 65%;
 }
 
 
-
-
-
-
-
-
+#footer2{
+	width: 35%;
+	border: 0px solid red;
+}
 
 
 
@@ -277,7 +282,6 @@ marquee{
 
 
 @media only screen and (max-width: 600px) {
-  
 
 
 header{
@@ -299,124 +303,56 @@ header{
 		border: 0px solid blue;
 }
 
-/**********************FIN HEADER**********************/
+
+
+
+/****************FIN HEADER****************/
 
 
 
 
 
-
-#works{
+#landing{
 	border: 0px solid black;
 	width: 100%;
-	margin-top: 3%;
-	/*padding-top: 10%;*/
-	overflow:scroll;
 	height: 90vh;
-
-}
-
-
-#backcircleyellow{
-	width: 30%;
-	position: fixed;
-	border: 0px solid yellow;
-	z-index: -1;
-	bottom: -20%;
-	left: -10%;
-}
-
-#backcirclered{
-	width: 25%;
-	position: fixed;
-	border: 0px solid yellow;
-	z-index: -1;
-	top: -20%;
-	right: -10%;
-}
-
-
-
-
-
-
-
-
-#articleprojet{
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	border: 0px solid black;
-	width: 93%;
-	margin: auto;
-	align-items: center;
-	margin-top: 14%;
+	justify-content: space-around;
 }
 
-#projtext{
-	margin-top: 4%;
-	width: 95%;
-}
-
-#projtitle, #projtype, #projdesc{
-	border: 0px solid black;
-}
-
-#projpic{
-	width: 100%;
-	border-radius: 25px;
-	filter: drop-shadow(3px 3px 7px #a6a6a6)
-}
-
-
-
-#projtitle{
+#landingtextbox{
 	font-family: Agrandir;
-	font-variation-settings: "wght" 469, "wdth" 150;
-	font-size: 1.7em;
+	font-variation-settings: "wght" 469, "wdth" 170;
+
 }
 
-#projtype{
-	font-size: 0.9em;
-	font-family: VremenaGroteskBook, sans-serif;
-	margin-top: 0%;
-	color: #6A6A6A;
+#landingtext{
+	font-family: Agrandir;
+	font-size: 2em;
+	font-variation-settings: "wght" 469, "wdth" 170;
 }
 
-#projdesc{
-	border: 0px solid black;
-
-	margin-top: 5%;
-	font-family: VremenaGroteskBook, sans-serif;
-	font-size: 0.9em;
-
-	line-height: 1.3;
+#selectedlanding{
+	font-family: Agrandir;
+	font-variation-settings: "wght" 469, "wdth" 170;
+	text-decoration: underline;
 }
 
+  
 
-
-
-
-
-
-
-/**********************FIN CONTENEUR**********************/
-
-
-
-footer{
-	font-size: 0.85em;
-	border: 0px solid red;
-	position: fixed;
-	bottom: 2%;
+#backcircle{
 	width: 100%;
-	font-family: VremenaGroteskBook, sans-serif;
+	position: absolute;
+	border: 0px solid yellow;
+	top: 25%;
+	margin-right: -80%;
+	z-index: -1;
 }
 
-marquee{
-	border: 0px solid blue;
-	mix-blend-mode: difference;
-}
+
+
+
 
 
 
