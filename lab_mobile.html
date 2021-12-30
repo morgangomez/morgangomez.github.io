@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr">
+	
+  <head>
+		<title>ORegen - Morgan Gomez</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/project_mobile.css">
+   		<link rel="icon" href="favicon.ico" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	</head>
+
+	<body>
+		<div id="conteneur">
+
+			<nav>
+					<a href="index.html">Morgan Gomez</a>
+					<a href="works_mobile.html">Works</a>
+					<a href="lab_mobile.html" id="selected">Lab</a>
+					<a href="about_mobile.html">About</a>
+			</nav>
+
+
+			<div id="contenu">
+
+				<div id="textbox">
+					
+					<h1 id="projtitle">Personal experiments</h1>
+					
+					<p id="projtext">My Instagram is where I post all of my experiments. This is where I try new things out, play with visuals, typography, anything and everything.
+					<br><br>
+					This is where I allow myself to fail, but also where I always create without any limits.</p>
+
+
+				</div>
+
+
+				<div id="imgbox">
+
+					<div class="embedsocial-hashtag" data-ref="37d95cae6acf2122d13aed32db7e124cde91f9e1" ><a class="feed-powered-by-es" href="https://embedsocial.com/social-media-aggregator/" target="_blank" title="Powered by EmbedSocial">Powered by EmbedSocial<span>→</span></a></div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialHashtagScript"));</script>
+
+					
+				</div>
+
+			</div> <!--fermeture contenU -->
+
+			<footer>
+				<section id="footer1">
+					<p>2021</p>
+				</section>
+				<section id="footer2">
+					<p>
+						<span id="MyClockDisplay" class="clock" onload="showTime()"></span>
+					</p>
+				</section>
+			</footer>
+
+		</div> <!--fermeture conteneur -->
+
+	</body>
+
+
+		<!--SCRIPT HEURE -->
+		<script>
+			function showTime(){
+			var date = new Date();
+			var h = date.getHours(); // 0 - 23
+			var m = date.getMinutes(); // 0 - 59
+			var s = date.getSeconds(); // 0 - 59
+			var session = "AM";
+			
+			if(h == 0){
+				h = 12;
+			}
+			
+			if(h > 12){
+				h = h - 12;
+				session = "PM";
+			}
+			
+			h = (h < 10) ? "0" + h : h;
+			m = (m < 10) ? "0" + m : m;
+			s = (s < 10) ? "0" + s : s;
+			
+			var time = h + ":" + m + ":" + s + " " + session;
+			document.getElementById("MyClockDisplay").innerText = time;
+			document.getElementById("MyClockDisplay").textContent = time;
+			
+			setTimeout(showTime, 1000);
+			
+		}
+
+		showTime();
+		</script>
+
+
+</html>

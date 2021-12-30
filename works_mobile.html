@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="fr"
+	  xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#" >
+	
+  <head>
+		<title>Morgan Gomez - Portfolio</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/works_mobile.css">
+   		<link rel="icon" href="favicon.ico" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+   		<meta property="og:image" content="preview.jpg" />
+
+   		
+
+
+
+
+   		
+	</head>
+
+	<body>
+		<div id="conteneur">
+
+
+			<nav>
+					<a href="index.html">Morgan Gomez</a>
+					<a href="works_mobile.html" id="selected">Works</a>
+					<a href="lab_mobile.html">Lab</a>
+					<a href="about_mobile.html">About</a>
+			</nav>
+
+
+			<section id="works">
+
+				<article>
+					<img src="pics/thumb_tba.jpg"/>
+					<div id="legende">
+						<p id="titre">COMING SOON</p>
+						<p id="type">Branding</p>
+				</article></a>
+
+				<article>
+					<img src="pics/thumb_tba.jpg"/>
+					<div id="legende">
+						<p id="titre">COMING SOON</p>
+						<p id="type">Branding</p>
+				</article></a>
+
+				<a href="project_pressecitron.html"><article>
+					<img src="pics/pressecitron/thumb.jpg"/>
+					<div id="legende">
+						<p id="titre">Trophée Presse Citron 2021</p>
+						<p id="type">Visual identity</p>
+				</article></a>
+
+
+
+				<a href="project_guerilla.html"><article>
+					<img src="pics/guerilla/thumb.jpg"/>
+					<div id="legende">
+						<p id="titre">-50%</p>
+						<p id="type">Art direction, Guerilla Marketing</p>
+				</article></a>
+
+
+
+				<a href="project_lockdown.html"><article>
+					<img src="pics/confinement/thumb.jpg">
+					<div id="legende">
+						<p id="titre">Locked Down</p>
+						<p id="type">Photography, 3D</p>
+				</article></a>
+
+
+
+				<a href="project_mystudyfit.html"><article>
+					<img src="pics/mystudyfit/thumb.png">
+					<div id="legende">
+						<p id="titre">MyStudy.fit</p>
+						<p id="type">Visual identity</p>
+				</article></a>
+
+
+
+				<a href="project_secondchance.html"><article>
+					<img src="pics/cumulus/thumb.png">
+					<div id="legende">
+						<p id="titre">Second Chance</p>
+						<p id="type">Global design</p>
+				</article></a>
+
+
+
+				<a href="project_oregen.html"><article>
+					<img src="pics/oregen/thumb.jpg">
+					<div id="legende">
+						<p id="titre">Oregen Worldwide Nation</p>
+						<p id="type">Art direction, video</p>
+				</article></a>
+
+
+
+				<a href="project_obsparis.html"><article>
+					<img src="pics/obsparis/thumb.jpg">
+					<div id="legende">
+						<p id="titre">Paris Observatory</p>
+						<p id="type">Branding, UI, VR</p>
+				</article></a>
+
+
+
+				<a href="project_chimera.html"><article>
+					<img src="pics/chimere/thumb.jpg">
+					<div id="legende">
+						<p id="titre">Chimera</p>
+						<p id="type">Processing installation</p>
+				</article></a>
+
+
+
+				<a href="project_loveid.html"><article>
+					<img src="pics/loveid/thumb.jpg">
+					<div id="legende">
+						<p id="titre">LoveID</p>
+						<p id="type">Generative design, print</p>
+				</article></a>
+
+
+
+				<a href="project_chroniques.html"><article>
+					<img src="pics/chroniques/thumb.png">
+					<div id="legende">
+						<p id="titre">The Martian Chronicles</p>
+						<p id="type">Editorial, 3D, AR</p>
+				</article></a>
+
+				<a href="project_memoire.html"><article>
+					<img src="pics/memoire/thumb.jpg">
+					<div id="legende">
+						<p id="titre">Space and its representation</p>
+						<p id="type">Editorial, dissertation</p>
+				</article></a>
+
+				<a href="project_futurepop.html"><article>
+					<img src="pics/futurepop/thumb.jpg">
+					<div id="legende">
+						<p id="titre">FuturePop</p>
+						<p id="type">Mixtape covers, posters</p>
+				</article></a>
+
+				<a href="project_rewind.html"><article>
+					<img src="pics/rewind/thumb.png">
+					<div id="legende">
+						<p id="titre">Rewind</p>
+						<p id="type">UI</p>
+				</article></a>
+
+				<a href="project_theconversation.html"><article>
+					<img src="pics/theconversation/thumb.jpg">
+					<div id="legende">
+						<p id="titre">The Conversation</p>
+						<p id="type">Video</p>
+				</article></a>
+
+				<a href="project_faroe.html"><article>
+					<img src="pics/faroe/thumb.png">
+					<div id="legende">
+						<p id="titre">Faroe Islands</p>
+						<p id="type">Posters</p>
+				</article></a>
+
+			</section>
+
+
+
+
+			<footer>
+
+				<section id="footer1">
+					<p>2021</p>
+				</section>
+				<section id="footer2">
+					<p>
+						<span id="MyClockDisplay" class="clock" onload="showTime()"></span>
+					</p>
+				</section>
+
+			</footer>
+
+
+		</div> <!--fermeture conteneur -->
+
+	</body>
+
+			<!--SCRIPT HEURE -->
+		<script>
+			function showTime(){
+			var date = new Date();
+			var h = date.getHours(); // 0 - 23
+			var m = date.getMinutes(); // 0 - 59
+			var s = date.getSeconds(); // 0 - 59
+			var session = "AM";
+			
+			if(h == 0){
+				h = 12;
+			}
+			
+			if(h > 12){
+				h = h - 12;
+				session = "PM";
+			}
+			
+			h = (h < 10) ? "0" + h : h;
+			m = (m < 10) ? "0" + m : m;
+			s = (s < 10) ? "0" + s : s;
+			
+			var time = h + ":" + m + ":" + s + " " + session;
+			document.getElementById("MyClockDisplay").innerText = time;
+			document.getElementById("MyClockDisplay").textContent = time;
+			
+			setTimeout(showTime, 1000);
+			
+		}
+
+		showTime();
+		</script>
+
+</html>
