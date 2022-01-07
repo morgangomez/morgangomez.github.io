@@ -36,7 +36,8 @@ body{
 	font-family: sans-serif;
 	color: white;
 	background-color: black;
-	font-size: 0.80em;
+	/*font-size: 0.80em;*/
+	font-size: 1.7vh;
 	line-height: 1.3;
 }
 

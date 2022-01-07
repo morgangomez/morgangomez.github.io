@@ -68,7 +68,8 @@ a:hover{
 }
 
 header{
-	font-size: 0.80em;
+	/*font-size: 0.80em;*/
+	font-size: 1.7vh;
 	text-align: center;
 	width: 100%;
 	border: 0px solid red;
@@ -106,16 +107,8 @@ header{
 
 #landingtext{
 	font-family: SuisseIntl-Regular, sans-serif;
-	font-size: 2em;
+	font-size: 4.2vh;
 	border: 0px solid black;
-}
-
-#landingtext2{
-	font-family: SuisseIntl-Regular, sans-serif;
-	font-size: 1.2em;
-	border: 0px solid black;
-
-	margin-top: 2%;
 }
 
 #landingitalic{
@@ -123,9 +116,18 @@ header{
 	font-family: Redaction-Italic;
 }
 
+#landingtext2{
+	font-family: SuisseIntl-Regular, sans-serif;
+	font-size: 2.7vh;
+	border: 0px solid black;
+
+	margin-top: 2%;
+}
+
 
 footer{
-	font-size: 0.80em;
+	/*font-size: 0.80em;*/
+	font-size: 1.7vh;
 	border: 0px solid red;
 	bottom: 3%;
 	width: 100%;
