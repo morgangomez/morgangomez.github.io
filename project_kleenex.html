@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="fr">
+	
+  <head>
+		<title>Kleenex 2021 - Morgan Gomez</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/project.css">
+   		<link rel="icon" href="favicon.ico" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   		<!-- SCRIPT REDIRECTION MOBILE --> 
+
+		<script type="text/javascript">
+
+		if (screen.width < 660) {
+		window.location = "project_kleenex_mobile.html";
+		}
+
+		</script>
+
+		<!-- FIN SCRIPT REDIRECTION MOBILE -->
+
+
+
+
+	</head>
+
+	<body>
+		<div id="conteneur">
+
+			<header>
+				<section id="navgauche">
+					<a href="index.html"><h1 id="logotitre">Morgan Gomez</h1></a>
+				</section>
+				<section id="navdroite">
+					<a href="works.html" id="selected">Works</a>
+					<a href="lab.html">Lab</a>
+					<a href="about.html">About</a>
+				</section>
+			</header>
+
+
+			<div id="contenu">
+
+				<div id="textbox">
+					
+					<h1 id="projtitle">Kleenex 2021</h1>
+
+					<p id="projtext">New values, New color<br><br>
+<strong>Kleenex</strong>, pioneer brand of the disposable tissue, peters out in front of the new environmental stakes. In 2021, Kleenex becomes the new standard-bearer of a hygiene that respects both the body and the planet by creating a disposable tissue that is no longer considered trash: a non-white disposable tissue without chemical products, therefore 100% biodegradable.<br><br>
+
+Thanks to a change of visual universe, the brand celebrates the new color of cleanliness and the values that go with it : ecology, transparency and ethics.</p>
+
+				</div>
+
+
+				<div id="imgbox">
+
+					<iframe src="https://player.vimeo.com/video/666552545?h=8f73bcdcb0&title=0&byline=0&portrait=0" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+					<img src="pics/kleenex/01.png" alt="Visual identity - Trophée Presse Citron - École Estienne - Graphic Design - Art Direction - 2021 © Morgan Gomez">
+
+					<img src="pics/kleenex/02.jpg" alt="Visual identity - Trophée Presse Citron - École Estienne - Graphic Design - Art Direction - 2021 © Morgan Gomez">
+
+					<img src="pics/kleenex/03.png" alt="Visual identity - Trophée Presse Citron - École Estienne - Graphic Design - Art Direction - 2021 © Morgan Gomez">
+
+					<img src="pics/kleenex/04.png" alt="Visual identity - Trophée Presse Citron - École Estienne - Graphic Design - Art Direction - 2021 © Morgan Gomez">
+
+					<img src="pics/kleenex/05.png" alt="Visual identity - Trophée Presse Citron - École Estienne - Graphic Design - Art Direction - 2021 © Morgan Gomez">
+
+					<img src="pics/kleenex/06.png" alt="Visual identity - Trophée Presse Citron - École Estienne - Graphic Design - Art Direction - 2021 © Morgan Gomez">
+
+					<img src="pics/kleenex/07.png" alt="Visual identity - Trophée Presse Citron - École Estienne - Graphic Design - Art Direction - 2021 © Morgan Gomez">
+
+					<img src="pics/kleenex/08.png" alt="Visual identity - Trophée Presse Citron - École Estienne - Graphic Design - Art Direction - 2021 © Morgan Gomez">
+
+					<img src="pics/kleenex/09.png" alt="Visual identity - Trophée Presse Citron - École Estienne - Graphic Design - Art Direction - 2021 © Morgan Gomez">
+
+					<img src="pics/kleenex/10.png" alt="Visual identity - Trophée Presse Citron - École Estienne - Graphic Design - Art Direction - 2021 © Morgan Gomez">
+
+					<img src="pics/kleenex/11.png" alt="Visual identity - Trophée Presse Citron - École Estienne - Graphic Design - Art Direction - 2021 © Morgan Gomez">
+
+					<img src="pics/kleenex/12.png" alt="Visual identity - Trophée Presse Citron - École Estienne - Graphic Design - Art Direction - 2021 © Morgan Gomez">
+
+					<img src="pics/kleenex/13.png" alt="Visual identity - Trophée Presse Citron - École Estienne - Graphic Design - Art Direction - 2021 © Morgan Gomez">
+
+					<img src="pics/kleenex/14.jpg" alt="Visual identity - Trophée Presse Citron - École Estienne - Graphic Design - Art Direction - 2021 © Morgan Gomez">
+					
+					
+				</div>
+
+			</div> <!--fermeture contenU -->
+
+			<footer>
+				<section id="footer1">
+					<p>2022</p>
+				</section>
+				<section id="footer2">
+					<p>
+						<span id="MyClockDisplay" class="clock" onload="showTime()"></span>
+					</p>
+				</section>
+			</footer>
+
+		</div> <!--fermeture conteneur -->
+
+	</body>
+
+
+		<!--SCRIPT HEURE -->
+		<script>
+			function showTime(){
+			var date = new Date();
+			var h = date.getHours(); // 0 - 23
+			var m = date.getMinutes(); // 0 - 59
+			var s = date.getSeconds(); // 0 - 59
+			var session = "AM";
+			
+			if(h == 0){
+				h = 12;
+			}
+			
+			if(h > 12){
+				h = h - 12;
+				session = "PM";
+			}
+			
+			h = (h < 10) ? "0" + h : h;
+			m = (m < 10) ? "0" + m : m;
+			s = (s < 10) ? "0" + s : s;
+			
+			var time = h + ":" + m + ":" + s + " " + session;
+			document.getElementById("MyClockDisplay").innerText = time;
+			document.getElementById("MyClockDisplay").textContent = time;
+			
+			setTimeout(showTime, 1000);
+			
+		}
+
+		showTime();
+		</script>
+
+
+</html>
