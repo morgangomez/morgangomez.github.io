@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="fr"
+	  xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#" >
+	
+  <head>
+		<title>Patek Philippe Nautilus / Morgan Gomez</title>
+		<meta name="description" content="Patek Philippe Nautilus / Morgan Gomez">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/project.css">
+   		<link rel="icon" href="favicon.ico" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+   		<meta property="og:image" content="preview.jpg" />
+
+   		<meta property="og:title" content="MORGAN GOMEZ">
+ 		<meta property="og:description" content="Patek Philippe Nautilus / Morgan Gomez">
+  		<meta property="og:type" content="website">
+
+
+   		<!-- SCRIPT REDIRECTION MOBILE -->
+
+		<script type="text/javascript">
+		if (screen.width < 660) {
+		window.location = "mobile.html";
+		}
+		</script>
+
+		<!-- FIN SCRIPT REDIRECTION MOBILE -->
+
+	</head>
+
+	<body>
+
+		<nav>
+			<a href="index.html"><h1>Morgan Gomez</h1></a>
+			<a href="about.html"><p id="pnav">About / Contact</p></a>
+		</nav>
+
+		<header>
+			<video preload="auto" data-w="1920" data-h="1080" style="aspect-ratio:1920/1080;" data-ar="0.5625" poster="img/thumb_patek.jpg" playsinline="" autoplay="" muted="" loop="" class="autoplay no-lazyload  loaded"><source src="vid/patekphilippe.mp4" type="video/mp4"></video>
+		</header>
+
+		<div id="conteneur">
+
+
+			<article class="textfirst">
+				<h1 id="texttitle">Patek Philippe<br>Nautilus 5990/1A-011</h1>
+				<p>
+					Inspired by the Nautilus’ maritime heritage and its distinctive porthole silhouette, this project translates the watch’s identity into a dynamic visual environment.
+					<br><br>
+					Flowing water elements were developed using Blender’s Geometry Nodes, enabling fully procedural, animated streams that interact organically with the watch. 
+					<br><br>
+					Particular attention was given to lighting and material definition, with each scene carefully constructed using multiple light sources to reveal the precision, depth and craftsmanship of the timepiece.
+					<br><br>
+					<h6>This project is part of an ongoing independent R&D process.</h6>
+				</p>
+			</article>
+
+
+			<img class="galleryone fade-in" src="project/patekphilippe/01.png" alt="Patek Philippe Nautilus Morgan Gomez">
+
+			<article class="fade-in" id="gallery">
+		  		<div class="thumb">
+		    		<img src="project/patekphilippe/02.jpg" alt="Patek Philippe Nautilus Morgan Gomez">
+		  		</div>
+
+		  		<div class="thumb">
+		    		<img src="project/patekphilippe/03.jpg" alt="Patek Philippe Nautilus Morgan Gomez">
+		  		</div>
+			</article>
+
+			<!-------------------------------------------------------------->
+
+			<img class="galleryone fade-in" src="project/patekphilippe/04.png" alt="Patek Philippe Nautilus Morgan Gomez">
+
+			<!-------------------------------------------------------------->
+
+			<article class="fade-in" id="gallery">
+		  		<div class="thumb">
+		    		<img src="project/patekphilippe/04.gif" alt="Patek Philippe Nautilus Morgan Gomez">
+		  		</div>
+
+		  		<div class="thumb">
+		    		<img src="project/patekphilippe/05.jpg" alt="Patek Philippe Nautilus Morgan Gomez">
+		  		</div>
+
+			</article>
+
+			<!-------------------------------------------------------------->
+
+
+			<article class="textbody">
+				<h1 id="texttitle">Behind the scenes</h1>
+			</article>
+
+			<!-------------------------------------------------------------->
+
+			<img class="galleryone fade-in" src="project/patekphilippe/wip.gif" alt="Patek Philippe Nautilus Morgan Gomez">
+
+			
+			<!-------------------------------------------------------------->
+
+			<article class="fade-in" id="gallery">
+		  		<div class="thumb">
+		    		<img src="project/patekphilippe/bts1.png" alt="Patek Philippe Nautilus Morgan Gomez">
+		  		</div>
+
+		  		<div class="thumb">
+		    		<img src="project/patekphilippe/bts2.png" alt="Patek Philippe Nautilus Morgan Gomez">
+		  		</div>
+			</article>
+
+			<!-------------------------------------------------------------->
+
+			<img class="galleryone fade-in" src="project/patekphilippe/bts3.png" alt="Patek Philippe Nautilus Morgan Gomez">
+
+			<!-------------------------------------------------------------->
+
+
+
+
+
+
+
+			<footer>
+
+				<h3 id="mail">hello.morgangomez@gmail.com</h3>
+				<div id="social">
+					<a href="https://www.linkedin.com/in/morgangmzz/" target="_blank" rel="noopener noreferrer" id="psocial">→ LinkedIn</a>
+					
+					<a href="https://www.behance.net/morgangmzz" target="_blank" rel="noopener noreferrer" id="psocial">→ Behance</a>
+					
+					<a href="https://www.instagram.com/morgangmzz/" target="_blank" rel="noopener noreferrer" id="psocial">→ Instagram</a>
+					
+					<a href="https://x.com/morgangmzz" target="_blank" rel="noopener noreferrer" id="psocial">→ Twitter</a>
+				</div>
+				
+			</footer>
+
+			<h6>© 2026 Morgan Gomez. All rights reserved</h6>
+
+		</div>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+			  const observer = new IntersectionObserver((entries) => {
+			    entries.forEach(entry => {
+			      if (entry.isIntersecting) {
+			        entry.target.classList.add("visible");
+			        observer.unobserve(entry.target);
+			      }
+			    });
+			  }, {
+			    root: null,
+			    threshold: 0.1   // l'image devient visible quand 20% apparaissent
+			  });
+
+			  document.querySelectorAll(".fade-in").forEach(img => {
+			    observer.observe(img);
+			  });
+			});
+		</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="fr"
+	  xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#" >
+	
+  <head>
+		<title>Solignac / Morgan Gomez</title>
+		<meta name="description" content="Solignac / Morgan Gomez">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/project.css">
+   		<link rel="icon" href="favicon.ico" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+   		<meta property="og:image" content="preview.jpg" />
+
+   		<meta property="og:title" content="MORGAN GOMEZ">
+ 		<meta property="og:description" content="Solignac / Morgan Gomez">
+  		<meta property="og:type" content="website">
+
+
+	</head>
+
+	<body>
+
+		<nav>
+			<a href="index.html"><h1>Morgan Gomez</h1></a>
+			<a href="about.html"><p id="pnav">About / Contact</p></a>
+		</nav>
+
+		<header>
+			<img src="project/solignac/01.jpg" alt="Vodka Solignac Packaging 3D Morgan Gomez" id="headerpic"/>
+		</header>
+
+		<div id="conteneur">
+
+
+			<article class="textfirst">
+				<h1 id="texttitle">"Vodka d'Auteur"</h1>
+				<p>Pierre Solignac, a committed artisan and founder of Solignac Vodkas, chose the agency to support the development of his brand strategy, as well as the creation of its visual identity and bottle design.
+				<br><br>
+				In collaboration with design agency Les Belles Causes, I created 3D visualizations and graphic design assets as part of the brand’s visual territory.
+				<br><br>
+				Agency: Les Belles Causes
+				<br>Creative Director: Sébastien Faure-Llorens
+				<br> Design Director: Guillaume Pesce
+				<br>3D Designer and Art Director: Morgan Gomez
+				</p>
+			</article>
+
+			
+
+			<img class="galleryfull fade-in" src="project/solignac/02-2.jpg" alt="Vodka Solignac Packaging 3D Morgan Gomez"/>
+
+			<img class="galleryone fade-in" src="project/solignac/02.jpg" alt="Vodka Solignac Packaging 3D Morgan Gomez"/>
+			
+
+			<img class="galleryone fade-in" src="project/solignac/03.jpg" alt="Vodka Solignac Packaging 3D Morgan Gomez"/>
+
+			<img class="galleryone fade-in" src="project/solignac/03-2.jpg" alt="Vodka Solignac Packaging 3D Morgan Gomez"/>
+
+			<img class="galleryfull fade-in" src="project/solignac/04.jpg" alt="Vodka Solignac Packaging 3D Morgan Gomez"/>
+
+			<img class="galleryone fade-in" src="project/solignac/05.jpg" alt="Vodka Solignac Packaging 3D Morgan Gomez"/>
+
+			<img class="galleryfull fade-in" src="project/solignac/05-2.jpg" alt="Vodka Solignac Packaging 3D Morgan Gomez"/>
+
+			<img class="galleryone fade-in" src="project/solignac/06.jpg" alt="Vodka Solignac Packaging 3D Morgan Gomez"/>
+
+			<img class="galleryone fade-in" src="project/solignac/07.jpg" alt="Vodka Solignac Packaging 3D Morgan Gomez"/>
+
+
+			<video preload="auto" data-w="1920" data-h="1080" style="aspect-ratio:1920/1080;" data-ar="0.5625" poster="img/thumb_perruche.png" playsinline="" autoplay="" muted="" loop=""><source src="project/solignac/09.mp4" type="video/mp4" class="autoplay-video" alt="La Perruche Branding Packaging Morgan Gomez"></video>
+
+
+			<img class="galleryfull fade-in" src="project/solignac/10.jpg" alt="Vodka Solignac Packaging 3D Morgan Gomez"/>
+
+			<img class="galleryone fade-in" src="project/solignac/11.jpeg" alt="Vodka Solignac Packaging 3D Morgan Gomez"/>
+
+
+
+			<footer>
+
+				<h3 id="mail">hello.morgangomez@gmail.com</h3>
+				<div id="social">
+					<a href="https://www.linkedin.com/in/morgangmzz/" target="_blank" rel="noopener noreferrer" id="psocial">→ LinkedIn</a>
+					
+					<a href="https://www.behance.net/morgangmzz" target="_blank" rel="noopener noreferrer" id="psocial">→ Behance</a>
+					
+					<a href="https://www.instagram.com/morgangmzz/" target="_blank" rel="noopener noreferrer" id="psocial">→ Instagram</a>
+					
+					<a href="https://x.com/morgangmzz" target="_blank" rel="noopener noreferrer" id="psocial">→ Twitter</a>
+				</div>
+				
+			</footer>
+
+			<h6>© 2026 Morgan Gomez. All rights reserved</h6>
+
+		</div>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+			  const observer = new IntersectionObserver((entries) => {
+			    entries.forEach(entry => {
+			      if (entry.isIntersecting) {
+			        entry.target.classList.add("visible");
+			        observer.unobserve(entry.target);
+			      }
+			    });
+			  }, {
+			    root: null,
+			    threshold: 0.1   // l'image devient visible quand 20% apparaissent
+			  });
+
+			  document.querySelectorAll(".fade-in").forEach(img => {
+			    observer.observe(img);
+			  });
+			});
+		</script>
+
+	</body>
+
+</html>

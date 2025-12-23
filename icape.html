@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="fr"
+	  xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#" >
+	
+  <head>
+		<title>ICAPE Group / Morgan Gomez</title>
+		<meta name="description" content="ICAPE Group / Morgan Gomez">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/project.css">
+   		<link rel="icon" href="favicon.ico" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+   		<meta property="og:image" content="preview.jpg" />
+
+   		<meta property="og:title" content="MORGAN GOMEZ">
+ 		<meta property="og:description" content="ICAPE Group / Morgan Gomez">
+  		<meta property="og:type" content="website">
+
+
+   		<!-- SCRIPT REDIRECTION MOBILE -->
+
+		<script type="text/javascript">
+		if (screen.width < 660) {
+		window.location = "mobile.html";
+		}
+		</script>
+
+		<!-- FIN SCRIPT REDIRECTION MOBILE -->
+
+	</head>
+
+	<body>
+
+		<nav>
+			<a href="index.html"><h1>Morgan Gomez</h1></a>
+			<a href="about.html"><p id="pnav">About / Contact</p></a>
+		</nav>
+
+		<header>
+			<img src="project/icape/01.jpg" alt="ICAPE Group Branding Morgan Gomez" id="headerpic"/>
+		</header>
+
+		<div id="conteneur">
+
+
+			<article class="textfirst">
+				<h1 id="texttitle">ICAPE Group</h1>
+				<p>Design of the logo, full visual identity system, and art direction of the brand guidelines for ICAPE Group, a global manufacturer of printed circuit boards and custom technical parts.
+				<br><br>
+				Agency: W Conran Design
+				<br>Creative Director: Paul Groves
+				<br> Art Directors: Madeleine Issartel, Célyne Paryzel
+				<br> Art Director Assistant: Morgan Gomez
+				</p>
+			</article>
+
+
+			<img class="galleryone fade-in" src="project/icape/02.jpg" alt="ICAPE Group Branding Morgan Gomez">
+
+			<img class="galleryone fade-in" src="project/icape/03.jpg" alt="ICAPE Group Branding Morgan Gomez">
+
+			<img class="galleryone fade-in" src="project/icape/04.jpg" alt="ICAPE Group Branding Morgan Gomez">
+
+			<img class="galleryone fade-in" src="project/icape/05.jpg" alt="ICAPE Group Branding Morgan Gomez">
+
+			
+
+			<footer>
+
+				<h3 id="mail">hello.morgangomez@gmail.com</h3>
+				<div id="social">
+					<a href="https://www.linkedin.com/in/morgangmzz/" target="_blank" rel="noopener noreferrer" id="psocial">→ LinkedIn</a>
+					
+					<a href="https://www.behance.net/morgangmzz" target="_blank" rel="noopener noreferrer" id="psocial">→ Behance</a>
+					
+					<a href="https://www.instagram.com/morgangmzz/" target="_blank" rel="noopener noreferrer" id="psocial">→ Instagram</a>
+					
+					<a href="https://x.com/morgangmzz" target="_blank" rel="noopener noreferrer" id="psocial">→ Twitter</a>
+				</div>
+				
+			</footer>
+
+			<h6>© 2026 Morgan Gomez. All rights reserved</h6>
+
+		</div>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+			  const observer = new IntersectionObserver((entries) => {
+			    entries.forEach(entry => {
+			      if (entry.isIntersecting) {
+			        entry.target.classList.add("visible");
+			        observer.unobserve(entry.target);
+			      }
+			    });
+			  }, {
+			    root: null,
+			    threshold: 0.1   // l'image devient visible quand 20% apparaissent
+			  });
+
+			  document.querySelectorAll(".fade-in").forEach(img => {
+			    observer.observe(img);
+			  });
+			});
+		</script>
+
+	</body>
+
+</html>

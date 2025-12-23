@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="fr"
+	  xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#" >
+	
+  <head>
+		<title>Experiments / Morgan Gomez</title>
+		<meta name="description" content="Experiments / Morgan Gomez">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/project.css">
+   		<link rel="icon" href="favicon.ico" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+   		<meta property="og:image" content="preview.jpg" />
+
+   		<meta property="og:title" content="MORGAN GOMEZ">
+ 		<meta property="og:description" content="Experiments / Morgan Gomez">
+  		<meta property="og:type" content="website">
+
+
+
+
+	</head>
+
+	<body>
+
+		<nav>
+			<a href="index.html"><h1>Morgan Gomez</h1></a>
+			<a href="about.html"><p id="pnav">About / Contact</p></a>
+		</nav>
+
+		<header>
+			<img src="project/lab/01.jpg" alt="Morgan Gomez 3D Designer Art Director Graphic Design" id="headerpic"/>
+		</header>
+
+		<div id="conteneur">
+
+
+			<article class="textfirst">
+				<h1 id="texttitle">Bose<br>QuietComfort</h1>
+				<p>
+					Developed as part of an ongoing research process, this project is a focused visual study that explores the interaction between light, texture and form on the Bose QuietComfort headphones. This demonstrates how lighting and material decisions can be used as strategic tools to reinforce quality, performance and tactility.
+					<br><br>
+					<h6>This project is part of an ongoing independent R&D process.</h6>
+				</p>
+			</article>
+
+
+
+
+
+
+			<img class="galleryfull fade-in" src="project/lab/02.jpg" alt="VMorgan Gomez 3D Designer Art Director Graphic Design"/>
+
+
+			<!-------------------------------------------------------------->
+
+			<article class="fade-in" id="gallery">
+		  		<div class="thumb">
+		    		<img src="project/lab/03.png" alt="Morgan Gomez 3D Designer Art Director Graphic Design">
+		  		</div>
+
+		  		<div class="thumb">
+		    		<img src="project/lab/04.png" alt="Morgan Gomez 3D Designer Art Director Graphic Design">
+		  		</div>
+			</article>
+
+			<!-------------------------------------------------------------->
+
+			<img class="galleryone fade-in" src="project/lab/05.jpg" alt="VMorgan Gomez 3D Designer Art Director Graphic Design"/>
+
+			<!-------------------------------------------------------------->
+
+			<article class="fade-in" id="gallery">
+		  		<div class="thumb">
+		    		<img src="project/lab/06.jpg" alt="Morgan Gomez 3D Designer Art Director Graphic Design">
+		  		</div>
+
+		  		<div class="thumb">
+		    		<img src="project/lab/07.jpg" alt="Morgan Gomez 3D Designer Art Director Graphic Design">
+		  		</div>
+			</article>
+
+			<!-------------------------------------------------------------->
+
+			<img class="galleryfull fade-in" src="project/lab/08.jpg" alt="VMorgan Gomez 3D Designer Art Director Graphic Design"/>
+
+			<article class="fade-in" id="gallery">
+		  		<div class="thumb">
+		    		<img src="project/lab/09.jpg" alt="Morgan Gomez 3D Designer Art Director Graphic Design">
+		  		</div>
+
+		  		<div class="thumb">
+		    		<img src="project/lab/10.png" alt="Morgan Gomez 3D Designer Art Director Graphic Design">
+		  		</div>
+			</article>
+
+			<!-------------------------------------------------------------->
+
+			<img class="galleryone fade-in" src="project/lab/11.jpg" alt="VMorgan Gomez 3D Designer Art Director Graphic Design"/>
+
+			<!-------------------------------------------------------------->
+
+			<article class="fade-in" id="gallery">
+		  		<div class="thumb">
+		    		<img src="project/lab/12.png" alt="Morgan Gomez 3D Designer Art Director Graphic Design">
+		  		</div>
+
+		  		<div class="thumb">
+		    		<img src="project/lab/13.png" alt="Morgan Gomez 3D Designer Art Director Graphic Design">
+		  		</div>
+			</article>
+
+			<!-------------------------------------------------------------->
+
+			
+
+
+			<footer>
+
+				<h3 id="mail">hello.morgangomez@gmail.com</h3>
+				<div id="social">
+					<a href="https://www.linkedin.com/in/morgangmzz/" target="_blank" rel="noopener noreferrer" id="psocial">→ LinkedIn</a>
+					
+					<a href="https://www.behance.net/morgangmzz" target="_blank" rel="noopener noreferrer" id="psocial">→ Behance</a>
+					
+					<a href="https://www.instagram.com/morgangmzz/" target="_blank" rel="noopener noreferrer" id="psocial">→ Instagram</a>
+					
+					<a href="https://x.com/morgangmzz" target="_blank" rel="noopener noreferrer" id="psocial">→ Twitter</a>
+				</div>
+				
+			</footer>
+
+			<h6>© 2026 Morgan Gomez. All rights reserved</h6>
+
+		</div>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+			  const observer = new IntersectionObserver((entries) => {
+			    entries.forEach(entry => {
+			      if (entry.isIntersecting) {
+			        entry.target.classList.add("visible");
+			        observer.unobserve(entry.target);
+			      }
+			    });
+			  }, {
+			    root: null,
+			    threshold: 0.1   // l'image devient visible quand 20% apparaissent
+			  });
+
+			  document.querySelectorAll(".fade-in").forEach(img => {
+			    observer.observe(img);
+			  });
+			});
+		</script>
+
+	</body>
+
+</html>

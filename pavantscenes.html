@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="fr"
+	  xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#" >
+	
+  <head>
+		<title>Premières Avant-Scènes / Morgan Gomez</title>
+		<meta name="description" content="Premières Avant-Scènes / Morgan Gomez">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/project.css">
+   		<link rel="icon" href="favicon.ico" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+   		<meta property="og:image" content="preview.jpg" />
+
+   		<meta property="og:title" content="MORGAN GOMEZ">
+ 		<meta property="og:description" content="Premières Avant-Scènes / Morgan Gomez">
+  		<meta property="og:type" content="website">
+
+
+   		<!-- SCRIPT REDIRECTION MOBILE -->
+
+		<script type="text/javascript">
+		if (screen.width < 660) {
+		window.location = "mobile.html";
+		}
+		</script>
+
+		<!-- FIN SCRIPT REDIRECTION MOBILE -->
+
+	</head>
+
+	<body>
+
+		<nav>
+			<a href="index.html"><h1>Morgan Gomez</h1></a>
+			<a href="about.html"><p id="pnav">About / Contact</p></a>
+		</nav>
+
+		<header>
+			<img src="project/pavantscenes/01.png" alt="Patek Philippe Nautilus" id="headerpic"/>
+		</header>
+
+		<div id="conteneur">
+
+
+			<article class="textfirst">
+				<h1 id="texttitle">Premières Avant-Scènes</h1>
+				<p>Premières Avant-Scènes is a classical music festival gathering new generation of music performers as well as long-time experts. With agency Les Belles Causes, we created a name, logo, and a complete brand system reflecting the festival’s ambition for openness and excellence. The event is founded and directed by Jean-Paul Scarpitta and held at the Potager du Roi in Versailles.
+				<br><br>
+				Agency: Les Belles Causes
+				<br>Creative Director: Sébastien Faure-Llorens
+				<br> Design Director: Guillaume Pesce
+				<br> Art Director: Morgan Gomez
+				</p>
+			</article>
+
+
+			<img class="galleryone fade-in" src="project/pavantscenes/01.jpg" alt="Premières Avant-Scènes Morgan Gomez Branding">
+
+			<img class="galleryone fade-in" src="project/pavantscenes/02.jpg" alt="Premières Avant-Scènes Morgan Gomez Branding">
+
+			<img class="galleryone fade-in" src="project/pavantscenes/03.jpg" alt="Premières Avant-Scènes Morgan Gomez Branding">
+
+			<img class="galleryone fade-in" src="project/pavantscenes/04.jpg" alt="Premières Avant-Scènes Morgan Gomez Branding">
+
+			<img class="galleryone fade-in" src="project/pavantscenes/05.jpg" alt="Premières Avant-Scènes Morgan Gomez Branding">
+
+			<img class="galleryone fade-in" src="project/pavantscenes/06.jpg" alt="Premières Avant-Scènes Morgan Gomez Branding">
+
+			<img class="galleryone fade-in" src="project/pavantscenes/07.jpg" alt="Premières Avant-Scènes Morgan Gomez Branding">
+
+
+			</article>
+
+
+
+			<footer>
+
+				<h3 id="mail">hello.morgangomez@gmail.com</h3>
+				<div id="social">
+					<a href="https://www.linkedin.com/in/morgangmzz/" target="_blank" rel="noopener noreferrer" id="psocial">→ LinkedIn</a>
+					
+					<a href="https://www.behance.net/morgangmzz" target="_blank" rel="noopener noreferrer" id="psocial">→ Behance</a>
+					
+					<a href="https://www.instagram.com/morgangmzz/" target="_blank" rel="noopener noreferrer" id="psocial">→ Instagram</a>
+					
+					<a href="https://x.com/morgangmzz" target="_blank" rel="noopener noreferrer" id="psocial">→ Twitter</a>
+				</div>
+				
+			</footer>
+
+			<h6>© 2026 Morgan Gomez. All rights reserved</h6>
+
+		</div>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+			  const observer = new IntersectionObserver((entries) => {
+			    entries.forEach(entry => {
+			      if (entry.isIntersecting) {
+			        entry.target.classList.add("visible");
+			        observer.unobserve(entry.target);
+			      }
+			    });
+			  }, {
+			    root: null,
+			    threshold: 0.1   // l'image devient visible quand 20% apparaissent
+			  });
+
+			  document.querySelectorAll(".fade-in").forEach(img => {
+			    observer.observe(img);
+			  });
+			});
+		</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="fr"
+	  xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#" >
+	
+  <head>
+		<title>Sauvage - Eau de Parfum / Morgan Gomez</title>
+		<meta name="description" content="Sauvage - Eau de Parfum / Morgan Gomez">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/project.css">
+   		<link rel="icon" href="favicon.ico" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+   		<meta property="og:image" content="preview.jpg" />
+
+   		<meta property="og:title" content="MORGAN GOMEZ">
+ 		<meta property="og:description" content="Sauvage - Eau de Parfum / Morgan Gomez">
+  		<meta property="og:type" content="website">
+
+
+   		<!-- SCRIPT REDIRECTION MOBILE -->
+
+		<script type="text/javascript">
+		if (screen.width < 660) {
+		window.location = "mobile.html";
+		}
+		</script>
+
+		<!-- FIN SCRIPT REDIRECTION MOBILE -->
+
+	</head>
+
+	<body>
+
+		<nav>
+			<a href="index.html"><h1>Morgan Gomez</h1></a>
+			<a href="about.html"><p id="pnav">About / Contact</p></a>
+		</nav>
+
+		<header>
+			<video preload="auto" data-w="1920" data-h="1080" style="aspect-ratio:1920/1080;" data-ar="0.5625" poster="img/thumb_dior.jpg" playsinline="" autoplay="" muted="" loop="" class="autoplay no-lazyload  loaded"><source src="vid/dior.mp4" type="video/mp4"></video>
+		</header>
+
+		<div id="conteneur">
+
+
+
+
+			<article class="textfirst">
+				<h1 id="texttitle">Sauvage<br>Eau de Parfum</h1>
+				<p>
+					Initially conceived as part of an exploration of material, light and atmosphere, this background environment became the foundation for a new creative direction. Rather than remaining a purely exploratory piece, the asset was developed into a standalone visual study.
+					<br><br>
+					It found its natural expression through a fragrance visualisation for Dior Sauvage. The project reflects a strategic approach to design: creating visual assets with enough depth and versatility to transcend their original purpose and support evolving brand narratives.
+					<br><br>
+					<h6>This project is part of an ongoing independent R&D process.</h6>
+				</p>
+
+
+			</article>
+
+			<article class="fade-in" id="gallery">
+		  		<div class="thumb">
+		    		<img src="project/dior/05.jpg" alt="Dior Sauvage Morgan Gomez">
+		  		</div>
+
+		  		<div class="thumb">
+		    		<img src="project/dior/06.png" alt="Dior Sauvage Morgan Gomez">
+		  		</div>
+			</article>
+
+
+	
+
+			<!-------------------------------------------------------------->
+
+			<img class="galleryone fade-in" src="project/dior/04.jpg" alt="Dior Sauvage Morgan Gomez">
+
+			<!-------------------------------------------------------------->
+
+			<article class="fade-in" id="gallery">
+		  		<div class="thumb">
+		    		<img src="project/dior/02.gif" alt="Dior Sauvage Morgan Gomez">
+		  		</div>
+
+		  		<div class="thumb">
+		    		<img src="project/dior/03.gif" alt="Dior Sauvage Morgan Gomez">
+		  		</div>
+			</article>
+
+			<article class="textbody">
+				<h1 id="texttitle">Behind the scenes</h1>
+			</article>
+
+			<!-------------------------------------------------------------->
+
+			<video preload="auto" data-w="1920" data-h="1080" style="aspect-ratio:1920/1080;" data-ar="0.5625" poster="img/thumb_patek.png" playsinline="" autoplay="" muted="" loop=""><source src="project/dior/07.mp4" type="video/mp4" class="autoplay-video" loading="lazy"></video>
+
+			<!-------------------------------------------------------------->
+
+
+
+
+
+
+
+			<footer>
+
+				<h3 id="mail">hello.morgangomez@gmail.com</h3>
+				<div id="social">
+					<a href="https://www.linkedin.com/in/morgangmzz/" target="_blank" rel="noopener noreferrer" id="psocial">→ LinkedIn</a>
+					
+					<a href="https://www.behance.net/morgangmzz" target="_blank" rel="noopener noreferrer" id="psocial">→ Behance</a>
+					
+					<a href="https://www.instagram.com/morgangmzz/" target="_blank" rel="noopener noreferrer" id="psocial">→ Instagram</a>
+					
+					<a href="https://x.com/morgangmzz" target="_blank" rel="noopener noreferrer" id="psocial">→ Twitter</a>
+				</div>
+				
+			</footer>
+
+			<h6>© 2026 Morgan Gomez. All rights reserved</h6>
+
+		</div>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+			  const observer = new IntersectionObserver((entries) => {
+			    entries.forEach(entry => {
+			      if (entry.isIntersecting) {
+			        entry.target.classList.add("visible");
+			        observer.unobserve(entry.target);
+			      }
+			    });
+			  }, {
+			    root: null,
+			    threshold: 0.1   // l'image devient visible quand 20% apparaissent
+			  });
+
+			  document.querySelectorAll(".fade-in").forEach(img => {
+			    observer.observe(img);
+			  });
+			});
+		</script>
+
+	</body>
+
+</html>

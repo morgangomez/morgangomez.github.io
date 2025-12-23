@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="fr"
+	  xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#" >
+	
+  <head>
+		<title>Kermel / Morgan Gomez</title>
+		<meta name="description" content="Kermel / Morgan Gomez">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/project.css">
+   		<link rel="icon" href="favicon.ico" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+   		<meta property="og:image" content="preview.jpg" />
+
+   		<meta property="og:title" content="MORGAN GOMEZ">
+ 		<meta property="og:description" content="Kermel / Morgan Gomez">
+  		<meta property="og:type" content="website">
+
+
+   		<!-- SCRIPT MUTE -->
+
+		<script>
+		document.addEventListener("DOMContentLoaded", () => {
+
+		  const header = document.querySelector('header');
+		  const video = header.querySelector('.video-sound');
+
+		  // état initial (HTML = muted)
+		  if (video.muted) {
+		    header.classList.add('is-muted');
+		  }
+
+		  video.addEventListener('click', () => {
+
+		    if (video.muted) {
+		      video.muted = false;
+		      video.volume = 1;
+		      video.play();
+		      header.classList.remove('is-muted');
+		    } else {
+		      video.muted = true;
+		      header.classList.add('is-muted');
+		    }
+
+		  });
+
+		});
+		</script>
+
+
+		<!-- FIN SCRIPT MUTE -->
+
+	</head>
+
+	<body>
+
+		<nav>
+			<a href="index.html"><h1>Morgan Gomez</h1></a>
+			<a href="about.html"><p id="pnav">About / Contact</p></a>
+		</nav>
+
+		<header>
+		  <video
+		    preload="auto"
+		    poster="img/thumb_kermel.jpg"
+		    playsinline
+		    autoplay
+		    muted
+		    loop
+		    class="autoplay no-lazyload loaded video-sound"
+		    style="aspect-ratio:1920/1080;">
+		    <source src="vid/kermel.mp4" type="video/mp4">
+		  </video>
+
+		  <h6 id="unmute">Click to unmute</h6>
+		  
+		</header>
+
+		<div id="conteneur">
+
+
+			<article class="textfirst">
+				<h1 id="texttitle">Metaskin Design</h1>
+				<p>Kermel is a leading industrial specialist in high-performance fibers engineered to resist fire, extreme heat, and electric arcs. These fibers form the backbone of advanced protective clothing for firefighters, industrial operators, law enforcement, and military personnel.
+				<br><br>
+				With the design agency Les Belles Causes, we designed and developed Kermel’s complete visual identity and brand environment, including its exhibition stand, reflecting the company’s expertise, innovation, and commitment to safety.
+				<br><br>
+				Agency: Les Belles Causes
+				<br>Creative Director: Sébastien Faure-Llorens
+				<br> Design Director: Guillaume Pesce
+				<br> Art Director: Morgan Gomez
+				<br> Logo: Maxime Demoncy
+				</p>
+			</article>
+
+
+			<img class="galleryone fade-in" src="project/kermel/01.jpg" alt="Kermel Branding Morgan Gomez">
+
+			<img class="galleryone fade-in" src="project/kermel/02.jpg" alt="Kermel Branding Morgan Gomez">
+
+			<img class="galleryone fade-in" src="project/kermel/03.jpg" alt="Kermel Branding Morgan Gomez">
+
+			<img class="galleryone fade-in" src="project/kermel/04.jpg" alt="Kermel Branding Morgan Gomez">
+
+			<img class="galleryone fade-in" src="project/kermel/05.jpg" alt="Kermel Branding Morgan Gomez">
+
+			<img class="galleryone fade-in" src="project/kermel/06.jpg" alt="Kermel Branding Morgan Gomez">
+
+			<img class="galleryone fade-in" src="project/kermel/07.jpg" alt="Kermel Branding Morgan Gomez">
+
+			<img class="galleryone fade-in" src="project/kermel/08.jpg" alt="Kermel Branding Morgan Gomez">
+
+			<img class="galleryone fade-in" src="project/kermel/09.jpg" alt="Kermel Branding Morgan Gomez">
+
+			<img class="galleryone fade-in" src="project/kermel/10.jpg" alt="Kermel Branding Morgan Gomez">
+
+			<img class="galleryone fade-in" src="project/kermel/11.jpg" alt="Kermel Branding Morgan Gomez">
+
+			<img class="galleryone fade-in" src="project/kermel/12.png" alt="Kermel Branding Morgan Gomez">
+
+			<img class="galleryone fade-in" src="project/kermel/13.png" alt="Kermel Branding Morgan Gomez">
+
+			<article class="textbody">
+				<h1 id="texttitle">Mimethic</h1>
+				<p>To strengthen its CSR initiatives, Kermel has launched Mimethic, a recycling program for the fibers used in protective solutions for the military, law enforcement, and industrial sectors. The agency contributed to the creation of the brand name, followed by the development of its visual identity and brand universe.	
+				</p>
+			</article>
+
+			<img class="galleryone fade-in" src="project/kermel/14.jpg" alt="Kermel Branding Morgan Gomez">
+
+			<img class="galleryone fade-in" src="project/kermel/15.jpg" alt="Kermel Branding Morgan Gomez">
+
+			<img class="galleryone fade-in" src="project/kermel/16.jpg" alt="Kermel Branding Morgan Gomez">
+
+			<img class="galleryone fade-in" src="project/kermel/17.jpg" alt="Kermel Branding Morgan Gomez">
+
+			<img class="galleryone fade-in" src="project/kermel/18.jpg" alt="Kermel Branding Morgan Gomez">
+
+			<img class="galleryone fade-in" src="project/kermel/19.png" alt="Kermel Branding Morgan Gomez">
+
+			<footer>
+
+				<h3 id="mail">hello.morgangomez@gmail.com</h3>
+				<div id="social">
+					<a href="https://www.linkedin.com/in/morgangmzz/" target="_blank" rel="noopener noreferrer" id="psocial">→ LinkedIn</a>
+					
+					<a href="https://www.behance.net/morgangmzz" target="_blank" rel="noopener noreferrer" id="psocial">→ Behance</a>
+					
+					<a href="https://www.instagram.com/morgangmzz/" target="_blank" rel="noopener noreferrer" id="psocial">→ Instagram</a>
+					
+					<a href="https://x.com/morgangmzz" target="_blank" rel="noopener noreferrer" id="psocial">→ Twitter</a>
+				</div>
+				
+			</footer>
+
+			<h6>© 2026 Morgan Gomez. All rights reserved</h6>
+
+		</div>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+			  const observer = new IntersectionObserver((entries) => {
+			    entries.forEach(entry => {
+			      if (entry.isIntersecting) {
+			        entry.target.classList.add("visible");
+			        observer.unobserve(entry.target);
+			      }
+			    });
+			  }, {
+			    root: null,
+			    threshold: 0.1   // l'image devient visible quand 20% apparaissent
+			  });
+
+			  document.querySelectorAll(".fade-in").forEach(img => {
+			    observer.observe(img);
+			  });
+			});
+		</script>
+
+	</body>
+
+</html>
