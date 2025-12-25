@@ -285,6 +285,18 @@ header.is-muted #unmute {
   opacity: 0.8;
 }
 
+#conteneur img {
+  border-radius: 25px;
+}
+
+#conteneur img.galleryfull {
+  border-radius: 0;
+}
+
+header img {
+  border-radius: 0;
+}
+
 
 
 
