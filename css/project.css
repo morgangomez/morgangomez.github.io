@@ -55,14 +55,15 @@ header {
     overflow: hidden;     /* coupe ce qui dépasse */
 }
 
+header img,
 header video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    transform: translate(-50%, -50%);
-    object-fit: cover;    /* crop propre, garde l’aspect ratio */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
 }
 
 video{
