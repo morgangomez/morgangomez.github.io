@@ -1,0 +1,396 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+@font-face {
+font-family: "SuisseIntl-Regular";
+src: url("fonts/SuisseIntl-Regular.otf") format("opentype");
+}
+
+@font-face {
+font-family: "SuisseIntl-Light";
+src: url("fonts/SuisseIntl-Light.otf") format("opentype");
+}
+
+
+a{
+	color: white;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+#pnav{
+	color: white;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh;        /* hauteur totale de l’écran */
+    overflow: hidden;     /* coupe ce qui dépasse */
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;    /* crop propre, garde l’aspect ratio */
+}
+
+video{
+	width: 100%;
+}
+
+
+body{
+	font-family: sans-serif;
+	background-color: #000000;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#headerpic{
+	width: 100%;
+	height: 100vh;          /* la vidéo prend 100% de la hauteur fenêtre */
+  overflow: hidden;       /* coupe ce qui dépasse */
+}
+
+
+#conteneur{
+	border: 0px solid yellow;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	font-family: "SuisseIntl-Regular";
+
+	width: 90%;
+	margin: auto;
+	height: 95vh;
+
+	padding-top: 10%;
+	gap: 20vh; /* ← espace uniforme entre TOUS les enfants */
+}
+
+
+h1{
+	font-family: "SuisseIntl-Regular";
+}
+
+
+
+
+nav{
+	border: 0px solid blue;
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	font-family: "SuisseIntl-Light";
+	align-items: center;
+
+	position: fixed;      /* fixe la nav */
+	width: 97%;      
+	z-index: 1000;        /* passe au-dessus du contenu */
+	margin-top: 1.5%;
+	font-size: 1.1rem;
+}
+
+/************************* ARTICLE TXT ****************************/
+
+
+.textfirst{
+	border: 0px solid yellow;
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	color:white;
+	font-family: "SuisseIntl-Light";
+	align-items: center;      /* centre horizontalement */
+  text-align: center;       /* centre le texte */
+  padding-top: 0%; /* j'avais mis 10% avant, pareil en desosus */
+  padding-bottom: 0%;
+}
+
+#texttitle{
+	border: px solid red;
+	font-family: "SuisseIntl-Regular";
+	font-size: 1.6rem;
+	padding-bottom: 1.5%;
+}
+
+p{
+	color: #B3B3B3
+}
+
+.textbody{
+	border: 0px solid yellow;
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	color:white;
+	font-family: "SuisseIntl-Light";
+	align-items: center;      /* centre horizontalement */
+  text-align: center;       /* centre le texte */
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+
+
+
+/***************** GALLERIE UNE SEULE PHOTO *********************/
+
+.galleryone{
+	width: 100%;
+}
+
+.galleryfull{
+	width: 100vw;
+}
+
+
+
+/************************* GALLERIE ****************************/
+
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: px; /* espace entre les images */
+  width: 85%;
+  margin: 0% auto; /* 5% en haut et bas, auto à gauche/droite */
+}
+
+/* Chaque image occupe 50% – gap, deux par ligne */
+.thumb {
+  flex: 1 1 calc(50% - 10px);
+}
+
+/* Les images s'adaptent parfaitement et gardent leur ratio naturel */
+.thumb img {
+  width: 93%;
+  height: auto;       /* essentiel pour conserver le ratio naturel */
+  display: block;
+  object-fit: cover;  /* tu peux enlever si tu veux strictement le ratio naturel */
+}
+
+
+/************************* FIN GALLERIE ****************************/
+
+
+
+
+footer{
+	display: flex;
+	flex-direction: column; /* empile verticalement */
+	align-items: center;
+	border: 0px solid white;
+	color: white;
+	width: 100%;
+
+	padding-top: 0%;
+	padding-bottom: 0%;
+}
+
+#mail{
+	font-family: "SuisseIntl-Light";
+	font-size: 1.6rem;
+	border: 0px solid red;
+	padding: 1%;
+}
+
+#social{
+	width: 20%;
+	font-size: 0.8rem;
+	display: inline-flex;
+	justify-content: space-between;
+	border: 0px solid red;
+	padding: 0.3%;
+
+}
+
+h6{
+	color: #B3B3B3;
+	font-size: 0.7rem;
+	padding-bottom: 3%;
+	margin: auto;
+}
+
+
+/************************* FADING EFFECT ****************************/
+
+
+/* État initial des images */
+.fade-in {
+  opacity: 0;
+  transform: translateY(0px);
+  filter: brightness(0);       /* noir complet */
+  transition: 
+    opacity 0.5s ease-out,
+    transform 0.5s ease-out,
+    filter 0.5s ease-out;
+}
+
+/* Quand l’image entre dans le viewport */
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: brightness(1);
+}
+
+#unmute {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "SuisseIntl-Light";
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* ✅ visible seulement quand la vidéo est mute */
+header.is-muted #unmute {
+  opacity: 0.8;
+}
+
+#conteneur img {
+  border-radius: 25px;
+}
+
+#conteneur img.galleryfull {
+  border-radius: 0;
+}
+
+header img {
+  border-radius: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+	  header {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  header video, header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #conteneur {
+    width: 100%;
+    padding-top: 20%;
+    gap: 12vh; /* respiration verticale mobile */
+  }
+
+  .galleryone,
+  	img:not(header img) {
+    width: 95%;
+    margin: 0 auto;
+    display: block;
+  }
+
+
+  #gallery {
+    flex-direction: column;
+    width: 100%;
+    gap: 5vh;
+  }
+
+  .thumb {
+    flex: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .thumb img {
+    width: 95%;
+    height: auto;
+  }
+
+    .textfirst,
+  .textbody {
+    width: 90%;
+    padding: 0;
+  }
+
+
+
+
+
+	  #mail {
+    font-size: clamp(1.2rem, 5vw, 1.6rem);
+    text-align: center;
+    padding: 5% 0;
+  }
+
+  #social {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding-top: 5%;
+  }
+
+  #psocial {
+    font-size: 0.9rem;
+  }
+
+  nav{
+  	padding-top: 3%;
+		width: 90%;      
+	}
+
+}
