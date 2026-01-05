@@ -317,17 +317,56 @@ header img {
 
 @media only screen and (max-width: 600px) {
 
-	  header {
-    height: 100vh;
+
+
+
+
+
+  /* HEADER : hauteur libre */
+  header {
+    position: relative;
     width: 100%;
-    overflow: hidden;
+    height: auto;
+    overflow: visible;
   }
 
-  header video, header img {
+  /* IMAGE HEADER : OK */
+  header img,
+  #headerpic {
+    position: relative;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    display: block;
+    object-fit: unset;
+
+    top: auto;
+    left: auto;
+    transform: none;
   }
+
+  /* VIDÉO HEADER : on enlève le centrage ABSOLU */
+  header video {
+    position: relative;
+
+    width: 100%;
+    height: auto;
+    display: block;
+
+    top: auto;
+    left: auto;
+    transform: none;
+
+    object-fit: contain;
+  }
+
+
+
+
+
+
+
+
+
 
   #conteneur {
     width: 100%;
