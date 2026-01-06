@@ -205,6 +205,35 @@
 			});
 		</script>
 
+		<script>
+		document.addEventListener("DOMContentLoaded", () => {
+
+		  // Desktop uniquement
+		  if (window.matchMedia("(max-width: 600px)").matches) return;
+
+		  const header = document.querySelector("header");
+		  const video = header?.querySelector("video");
+
+		  if (!video) return; // sécurité : seulement les pages avec vidéo
+
+		  const observer = new IntersectionObserver((entries) => {
+		    entries.forEach(entry => {
+
+		      if (entry.intersectionRatio < 0.3) {
+		        // Moins de 50% visible → mute
+		        video.muted = true;
+		        header.classList.add("is-muted");
+		      }
+
+		    });
+		  }, {
+		    threshold: [0.3]
+		  });
+
+		  observer.observe(video);
+		});
+		</script>
+
 	</body>
 
 </html>
