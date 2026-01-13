@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="fr"
+	  xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#" >
+	
+  <head>
+		<title>SNES Controller - Morgan Gomez</title>
+		<meta name="description" content="3D visuals for Nintendo's new SNES Controller.">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="Morgan Gomez, graphiste, 3D, directeur artistique, branding, identité visuelle, design 3D, portfolio">
+		<link rel="stylesheet" href="css/project.css">
+
+
+		  <!-- Open Graph -->
+		  <meta property="og:title" content="SNES Controller - Morgan Gomez">
+		  <meta property="og:description" content="3D visuals for Nintendo's new SNES Controller.">
+		  <meta property="og:type" content="website">
+		  <meta property="og:url" content="https://morgangomez.com/snescontroller.html">
+		  <meta property="og:image" content="preview.jpg">
+   		
+  		<!-- Les favicon -->
+
+   		<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+
+
+		<!-- Structured Data -->
+
+		<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "WebPage",
+		  "name": "SNES Controller - Morgan Gomez",
+		  "url": "https://morgangomez.com/snescontroller.html",
+		  "description": "3D visuals for Nintendo's new SNES Controller.",
+		  "isPartOf": {
+		    "@type": "WebSite",
+		    "name": "Morgan Gomez",
+		    "url": "https://morgangomez.com/"
+		  }
+		}
+		</script>
+
+	</head>
+
+	<body>
+
+		<nav>
+			<a href="index.html"><h1>Morgan Gomez</h1></a>
+			<a href="about.html"><p id="pnav">About / Contact</p></a>
+		</nav>
+
+		<header>
+			<img src="project/snes/01.jpg" alt="SNES controller Morgan Gomez 3D design" id="headerpic"/>
+		</header>
+
+		<div id="conteneur">
+
+
+			<article class="textfirst">
+				<h1 id="texttitle">SNES Controllers</h1>
+				<p>This project stems from personal experimentation with 3D lighting on plastic objects. The goal was to create clean, simple lighting setups while minimizing reflective materials, in order to highlight the form and texture of everyday objects — in this case, a Super Nintendo controller. This could be applied to any other object, from chargers to pens, toothbrushes, and beyond. The study explores how subtle lighting decisions can enhance perception, depth, and materiality in a controlled 3D environment.
+				<br><br>
+				<h6>This project is part of an ongoing independent R&D process.</h6>
+				</p>
+			</article>
+
+
+			<img class="galleryone fade-in" src="project/snes/02.jpg" alt="SNES controller Morgan Gomez 3D design">
+
+			<article class="fade-in" id="gallery">
+		  		<div class="thumb">
+		    		<img src="project/snes/03.jpg" alt="SNES controller Morgan Gomez 3D design">
+		  		</div>
+
+		  		<div class="thumb">
+		    		<img src="project/snes/04.jpg" alt="SNES controller Morgan Gomez 3D design">
+		  		</div>
+
+			</article>
+
+
+			<img class="galleryone fade-in" src="project/snes/05.jpg" alt="SNES controller Morgan Gomez 3D design">
+
+
+
+			<footer>
+
+				<h3 id="mail">hello.morgangomez@gmail.com</h3>
+				<div id="social">
+					<a href="https://www.linkedin.com/in/morgangmzz/" target="_blank" rel="noopener noreferrer" id="psocial">→ LinkedIn</a>
+					
+					<a href="https://www.behance.net/morgangmzz" target="_blank" rel="noopener noreferrer" id="psocial">→ Behance</a>
+					
+					<a href="https://www.instagram.com/morgangmzz/" target="_blank" rel="noopener noreferrer" id="psocial">→ Instagram</a>
+					
+					<a href="https://x.com/morgangmzz" target="_blank" rel="noopener noreferrer" id="psocial">→ Twitter</a>
+				</div>
+				
+			</footer>
+
+			<h6>© 2026 Morgan Gomez. All rights reserved</h6>
+
+		</div>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+			  const observer = new IntersectionObserver((entries) => {
+			    entries.forEach(entry => {
+			      if (entry.isIntersecting) {
+			        entry.target.classList.add("visible");
+			        observer.unobserve(entry.target);
+			      }
+			    });
+			  }, {
+			    root: null,
+			    threshold: 0.1   // l'image devient visible quand 20% apparaissent
+			  });
+
+			  document.querySelectorAll(".fade-in").forEach(img => {
+			    observer.observe(img);
+			  });
+			});
+		</script>
+
+	</body>
+
+</html>
