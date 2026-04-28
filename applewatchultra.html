@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="fr"
+	  xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#" >
+	
+  <head>
+		<title>Apple Watch Ultra - Morgan Gomez</title>
+		<meta name="description" content="3D visuals for Apple Watch Ultra.">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="Morgan Gomez, graphiste, 3D, directeur artistique, branding, identité visuelle, design 3D, portfolio">
+		<link rel="stylesheet" href="css/project.css">
+
+
+		  <!-- Open Graph -->
+		  <meta property="og:title" content="Apple Watch Ultra - Morgan Gomez">
+		  <meta property="og:description" content="3D visuals for Apple Watch Ultra.">
+		  <meta property="og:type" content="website">
+		  <meta property="og:url" content="https://morgangomez.com/applewatchultra.html">
+		  <meta property="og:image" content="preview.jpg">
+   		
+  		<!-- Les favicon -->
+
+   		<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+
+
+		<!-- Structured Data -->
+
+		<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "WebPage",
+		  "name": "Apple Watch Ultra - Morgan Gomez",
+		  "url": "https://morgangomez.com/applewatchultra.html",
+		  "description": "3D visuals for Apple Watch Ultra.",
+		  "isPartOf": {
+		    "@type": "WebSite",
+		    "name": "Morgan Gomez",
+		    "url": "https://morgangomez.com/"
+		  }
+		}
+		</script>
+
+	</head>
+
+	<body>
+
+		<nav>
+			<a href="index.html"><h1>Morgan Gomez</h1></a>
+			<a href="about.html"><p id="pnav">About / Contact</p></a>
+		</nav>
+
+		<header>
+			<img src="project/awu/05.jpg" alt="SNES controller Morgan Gomez 3D design" id="headerpic"/>
+		</header>
+
+		<div id="conteneur">
+
+
+			<article class="textfirst">
+				<h1 id="texttitle">Apple Watch Ultra</h1>
+				<p>This work originated from hands-on exploration of advanced 3D lighting techniques applied to premium tech products. The approach is versatile and can extend to a wide range of items, including phones, audio gear, timepieces, and more. It examines how nuanced lighting choices influence visual perception, adding a sense of depth and bringing out material qualities within a carefully controlled 3D setting.
+				<br><br>
+				<h6>This project is part of an ongoing independent R&D process.</h6>
+				</p>
+			</article>
+
+
+			<img class="galleryone fade-in" src="project/awu/02.jpg" alt="Apple Watch Ultra Morgan Gomez 3D design">
+
+
+			<img class="galleryone fade-in" src="project/awu/01-2.jpg" alt="Apple Watch Ultra Morgan Gomez 3D design">
+
+			<img class="galleryone fade-in" src="project/awu/03.jpg" alt="Apple Watch Ultra Morgan Gomez 3D design">
+
+			<img class="galleryone fade-in" src="project/awu/04.jpg" alt="Apple Watch Ultra Morgan Gomez 3D design">
+
+			<img class="galleryfull fade-in" src="project/awu/05.jpg" alt="Apple Watch Ultra Morgan Gomez 3D design">
+
+			<img class="galleryone fade-in" src="project/awu/06.jpg" alt="Apple Watch Ultra Morgan Gomez 3D design">
+
+			<img class="galleryfull fade-in" src="project/awu/07.jpg" alt="Apple Watch Ultra Morgan Gomez 3D design">
+
+
+
+			<footer>
+
+				<h3 id="mail">hello.morgangomez@gmail.com</h3>
+				<div id="social">
+					<a href="https://www.linkedin.com/in/morgangmzz/" target="_blank" rel="noopener noreferrer" id="psocial">→ LinkedIn</a>
+					
+					<a href="https://www.behance.net/morgangmzz" target="_blank" rel="noopener noreferrer" id="psocial">→ Behance</a>
+					
+					<a href="https://www.instagram.com/morgangmzz/" target="_blank" rel="noopener noreferrer" id="psocial">→ Instagram</a>
+					
+
+				</div>
+				
+			</footer>
+
+			<h6>© 2026 Morgan Gomez. All rights reserved</h6>
+
+		</div>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+			  const observer = new IntersectionObserver((entries) => {
+			    entries.forEach(entry => {
+			      if (entry.isIntersecting) {
+			        entry.target.classList.add("visible");
+			        observer.unobserve(entry.target);
+			      }
+			    });
+			  }, {
+			    root: null,
+			    threshold: 0.1   // l'image devient visible quand 20% apparaissent
+			  });
+
+			  document.querySelectorAll(".fade-in").forEach(img => {
+			    observer.observe(img);
+			  });
+			});
+		</script>
+
+	</body>
+
+</html>
